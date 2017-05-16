@@ -1,0 +1,7 @@
+{
+"name": "Thomas & Friends Extension",
+"description": "All images will be replaced with a Thomas & Friends photos.",
+"icons": {"Thomas": "thomas.png", "Gordon":"gordon.png", "Percy":"percy.png", "Sir Topham Hatt": "sirtophamhatt.png", "James":"james.png", "Toby":"toby.png", Henry:"henry.png", "Edward": "edward.png", "Emily": "emily.png", "Cranky": "cranky.png", "Bill":"bill.png", "Connor":"connor.png", "Victor":"victor.png", "Oliver":"oliver.png","Porter":"porter.png","Stephen":"stephen.png","Samson":"samson.png","Gator":"gator.png","Ben":"ben.png"}
+"browser_action": {"default_icon":"icon.png","default_title": "Thomas & Friends Extension", "default_manifest":"manifest version": 2,
+"content security policy": "script-src 'self' https://www.google.com'"
+}
