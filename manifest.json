@@ -2,40 +2,23 @@
 {
 "name": "Thomas & Friends Extension",
 "description": "All images will be replaced with a Thomas & Friends photos.",
-"icons": {"Thomas": "thomas.png", "Gordon":"gordon.png", "Percy":"percy.png", "Sir Topham Hatt": "sirtophamhatt.png", "James":"james.png", "Toby":"toby.png", "Henry":"henry.png", "Edward": "edward.png", "Emily": "emily.png", "Cranky": "cranky.png", "Bill":"bill.png", "Connor":"connor.png", "Victor":"victor.png", "Oliver":"oliver.png","Porter":"porter.png","Stephen":"stephen.png","Samson":"samson.png","Gator":"gator.png","Ben":"ben.png"},
 "manifest_version": 2,
-"version": "0.1.0"
-}
+"version": "0.1.0",
 
 //Change Image manifest.json
-{
-  "manifest_version": 2,
- 
-  "name": "Modify CSS and HTML",
-  "version": "0.1.0",
-  "description": "Lateral blog post demo extension",
- 
-  "content_scripts": [{
+"content_scripts": [{
     "css": ["styles.css"],
     "js": ["content.js"],
-    "matches": ["https://blog.lateral.io/*"]
-  }]
- 
-}
-
+    "matches": ["<all_urls>"]
+  }],
+    
 //Open New Tab manifest.json
-{
-  "manifest_version": 2,
-  "name": "Open New Tab Extension",
-  "version": "0.1",
-  "background": {
+     "background": {
     "scripts": ["background.js"]
   },
   "content_scripts": [
     {
-      "matches": [
-        "<all_urls>"
-      ],
+      "matches": ["<all_urls>"],
       "js": ["jquery-3.2.1.min.js", "content.js"]
     }
   ],
